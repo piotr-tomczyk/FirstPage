@@ -3,15 +3,18 @@ body{
     display: flex;
     flex-direction: column;
     font-family: Open Sans;
+    padding: 0;
+    margin: 0;
 }
 .header{
     display: flex;
     justify-content: space-around;
     height:150px;
 }
-.header-text{
+.header-text, .two-author, .three-text-title{
     font-size: 24px;
     font-weight: 900;
+    padding-top:16px;
 }
 .bottom-header{
     display:flex;
@@ -29,9 +32,12 @@ body{
 .botoom-header-text{
     font-size: 18px;
 }
-img, .bottom-header-image{
+.img1{
     width:300px;
     height: auto;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #3882F6;
 }
 .header, .bottom-header, .footer{
     background-color: #1F2937;
@@ -46,12 +52,22 @@ img, .bottom-header-image{
     display:flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.one-info{
+    font-size: 36px;
+    font-weight: 900;
+    color:#1F2937;
+    padding: 20px;
 }
 .one-images{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-align: center;
+    padding: 20px;
 }
 .two{
     display: flex;
@@ -59,23 +75,54 @@ img, .bottom-header-image{
     justify-content: center;
     flex-direction: column;
     background-color: #E5E7EB;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+.two-quote{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #1F2937;
+}
+.two-author{
+    color: #1f2937;
+    padding-left: 500px;
 }
 .three{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin:200px;    
+}
+.three-text-title, .three-text-text{
+    color:white;
 }
 .three-sign-up{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 70px;
 }
 .footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding:24px;
+    font-weight: bolder;
+    font-size:24px;
+}
+.three-button{
+    border-style: solid;
+    border-color: #E5E7EB;
 }
 ul{
     display: flex;
@@ -90,10 +137,11 @@ a{
 button{
     background-color: #3882F6;
     border:none;
-    border-radius: 5%;
+    border-radius: 8px;
     color: white;
     font-size: 20px;
     font-weight: 700;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 10px 25px 10px 25px;
 }
